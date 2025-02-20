@@ -1,0 +1,68 @@
+.profile-page {
+  padding: 20px;
+  margin: 0; /* Remove any default margin */
+  width: 100%; /* Ensure it takes the full width */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.history-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.profile-history-icon {
+  font-size: 18px;
+}
+
+.no-booking {
+  font-size: 18px;
+  color: gray;
+}
+
+/* Increase the width of the cards */
+.booking-card {
+  display: inline-block; /* Cards flow freely */
+  width: calc(33.33% - 20px); /* 3 per row */
+  margin: 10px 0; /* Adjust margin for vertical spacing */
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: left; /* Align text inside the card to the left */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.booking-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Responsive - Adjust for smaller screens */
+@media (max-width: 1024px) {
+  .booking-card {
+    width: calc(50% - 20px); /* 2 per row */
+  }
+}
+
+@media (max-width: 768px) {
+  .booking-card {
+    width: calc(100% - 20px); /* 1 per row */
+  }
+}
